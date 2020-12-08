@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./node_modules/nightwatch/bin/nightwatch index.js --headless --reporter html-reporter.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/PranayPant/e2e-aws-demo#readme",
   "dependencies": {
-    "nightwatch": "^1.5.1"
+    "chromedriver": "^87.0.2",
+    "geckodriver": "^1.21.0",
+    "handlebars": "^4.7.6",
+    "nightwatch": "^1.5.1",
+    "selenium-server": "^3.141.59"
   }
 }
