@@ -8,7 +8,7 @@ module.exports = {
         .setValue('input[type=search]', 'nightwatch')
         .assert.visible('button[type=submit]')
         .click('button[type=submit]')
-        .assert.containsText('.mainline-results', 'Nightwatch.js')
+        .verify.containsText('.mainline-results', 'Nightwatch.js')
         .end();
     }
   };
