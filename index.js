@@ -6,7 +6,6 @@ module.exports = {
         .assert.titleContains('Ecosia')
         .setValue('input[type=search]', 'nightwatch')
         .click('button[type=submit]')
-        .verify.containsText('.mainline-results', 'Nightwatch.js')
         .end();
     }
   };
