@@ -18,6 +18,8 @@ phases:
       - echo Build completed on `date`
       - aws s3 rm s3://e2e-demo/* --recursive
       - aws s3 cp tests_output s3://e2e-demo/ --recursive
+      - aws configure set preview.cloudfront true
+      - aws cloudfront create-invalidation --distribution-id E39RSX07DBA34I --paths "/*""
 # Include only the files required for your application to run.
 # Do not use recursively include artifacts from node_modules directory as it will include unnecessary packages 
 # used only for building and testing.
