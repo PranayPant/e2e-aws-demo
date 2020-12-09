@@ -3,7 +3,7 @@ module.exports = {
       browser
         .url('https://www.ecosia.org/')
         .waitForElementVisible('body')
-        .assert.titleContains('Blahhh')
+        .assert.titleContains('trees')
         .end();
     }
   };
